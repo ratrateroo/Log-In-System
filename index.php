@@ -5,6 +5,12 @@
     <section class="main-container">
         <div class="main-wrapper">
             <h2>Home</h2>
+            <?php 
+                if(isset($_SESSION['u_id'])){
+
+                    echo "<p>Welcome ". $_SESSION['u_uid'] ."</p>";
+                }
+            ?>
         </div>
     </section>
 <?php 
